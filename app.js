@@ -1,7 +1,3 @@
-const http = require('http')
+const {createReadStream} = require('fs')
 
-const server = http.createServer((req, res)=>{
-    res.write('welcome to our home page');
-    res.end()
-})
-server.listen(500)
+const straem = createReadStream("")
